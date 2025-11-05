@@ -49,5 +49,3 @@ def battle_act(payload: BattleActRequest, request: Request):
     if session.ended:
         session.turn = "end"
     return session.snapshot()
-
-*** End of File
