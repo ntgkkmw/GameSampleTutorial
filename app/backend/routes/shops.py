@@ -34,4 +34,3 @@ def inn_rest(payload: InnRestRequest, request: Request):
     player.gold = max(0, player.gold - payload.price)
     return combatant_to_dict(player)
 
-*** End of File
