@@ -26,4 +26,3 @@ def new_game(payload: NewGameRequest, request: Request):
         "progress": {"boss_defeated": False},
     }
 
-*** End of File
