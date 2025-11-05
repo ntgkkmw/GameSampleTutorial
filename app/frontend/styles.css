@@ -1,0 +1,158 @@
+:root {
+  --bg: #050505;
+  --fg: #f0f7da;
+  --accent: #3fe26f;
+  --panel: #101820;
+  --border: #3fe26f;
+  --font-main: 'Share Tech Mono', 'M PLUS 1 Code', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#game-shell {
+  width: 960px;
+  max-width: 96vw;
+  background: var(--panel);
+  border: 4px double var(--border);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+
+#status-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#info-bar {
+  padding: 6px 10px;
+  border: 2px solid var(--border);
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+.window {
+  border: 2px solid var(--border);
+  background: rgba(5, 20, 10, 0.7);
+  padding: 12px;
+}
+
+#message-log {
+  height: 320px;
+  overflow-y: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#message-log p {
+  margin: 0 0 4px;
+  white-space: pre-wrap;
+}
+
+#command-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#command-area {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#command-area button,
+#save-controls button,
+#name-form button {
+  font-family: var(--font-main);
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--accent);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+#command-area button:hover:not(:disabled),
+#save-controls button:hover:not(:disabled),
+#name-form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+#command-area button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#save-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  width: 320px;
+  text-align: center;
+}
+
+#player-name {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  font-size: 20px;
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--accent);
+  border: 2px solid var(--border);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  #game-shell {
+    padding: 12px;
+  }
+  #status-bar {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+  }
+  #message-log {
+    height: 240px;
+    font-size: 16px;
+  }
+}
+
+/* TODO: Sprite container styling will go here once images are added. */

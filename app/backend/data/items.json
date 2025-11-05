@@ -1,0 +1,6 @@
+[
+  { "id":"herb", "name":"薬草", "type":"heal", "power":"25-35" },
+  { "id":"antidote", "name":"解毒薬", "type":"cure_poison" },
+  { "id":"ether", "name":"霊薬", "type":"mp", "power":"12-18" },
+  { "id":"holywater", "name":"聖水", "type":"revive", "power":"half" }
+]

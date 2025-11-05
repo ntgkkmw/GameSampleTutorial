@@ -1,0 +1,4 @@
+[
+  { "id":"heal", "name":"ヒール", "type":"heal", "mp":3, "power":"12-16", "scale":"MAG*0.5" },
+  { "id":"fire", "name":"ファイア", "type":"attack", "mp":5, "power":"10-14", "scale":"MAG*0.6" }
+]

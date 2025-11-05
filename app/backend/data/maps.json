@@ -1,0 +1,7 @@
+{
+  "start_town": { "name":"はじまりの町", "type":"town", "neighbors":["grass"], "innPrice":5, "shop":["herb","antidote","ether"] },
+  "grass":      { "name":"草むら", "type":"field","neighbors":["start_town","next_town"], "encounter":"grass" },
+  "next_town":  { "name":"つぎの町","type":"town", "neighbors":["grass","cave"], "innPrice":12, "shop":["herb","antidote","ether"] },
+  "cave":       { "name":"洞窟入口","type":"dungeon","neighbors":["next_town","boss_room"], "encounter":"cave" },
+  "boss_room":  { "name":"最奥","type":"boss","neighbors":["cave"] }
+}
