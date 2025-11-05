@@ -38,14 +38,7 @@ pip install fastapi uvicorn pydantic[dotenv] python-multipart
 uvicorn main:app --reload
 ```
 
-別ターミナルでフロントエンドを配信します。
-
-```bash
-cd app/frontend
-python -m http.server 8000
-```
-
-ブラウザで <http://localhost:8000> を開くとゲームが始まります。
+FastAPI がフロントエンドの静的ファイルも配信するため、ブラウザで <http://localhost:8000> を開けばそのままゲームが始まります。
 
 ## ゲームの流れ
 
