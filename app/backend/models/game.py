@@ -152,4 +152,3 @@ class GameData:
 
         return os.getenv("CORS_ALLOW_ORIGINS", "*").split(",")
 
-*** End of File
