@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>ドラクエ風レトロRPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-shell">
+      <header id="status-bar">
+        <div id="location-name">-</div>
+        <div id="status-stats">---</div>
+      </header>
+      <section id="info-bar">準備中...</section>
+      <main id="main-window">
+        <div id="message-log" class="window"></div>
+      </main>
+      <footer id="command-panel" class="window">
+        <div id="command-area"></div>
+        <div id="save-controls">
+          <button id="save-btn">セーブ</button>
+          <button id="load-btn">ロード</button>
+        </div>
+      </footer>
+    </div>
+
+    <div id="name-modal" class="modal hidden">
+      <div class="modal-content window">
+        <h1>なまえを きめてください</h1>
+        <form id="name-form">
+          <input id="player-name" type="text" maxlength="8" placeholder="ゆうしゃ" />
+          <button type="submit">はじめる</button>
+        </form>
+        <p class="hint">※未入力なら「ゆうしゃ」になります。</p>
+      </div>
+    </div>
+
+    <!-- TODO: Attach BGM/SE playback hooks once assets are available. -->
+    <!-- TODO: Sprite and background image containers live here when art is ready. -->
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

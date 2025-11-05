@@ -1,0 +1,9 @@
+[
+  { "id":"slime", "name":"スライム", "area":"grass", "base":{"hp":8,"mp":0,"atk":3,"def":1,"mag":0,"agi":2}, "exp":3, "gold":2, "skills":[] },
+  { "id":"goblin", "name":"ゴブリン", "area":"grass", "base":{"hp":14,"mp":0,"atk":6,"def":2,"mag":0,"agi":3}, "exp":5, "gold":4, "skills":[] },
+  { "id":"wolf", "name":"おおかみ", "area":"grass", "base":{"hp":20,"mp":0,"atk":8,"def":4,"mag":0,"agi":5}, "exp":8, "gold":6, "skills":[] },
+  { "id":"bat", "name":"こうもり", "area":"cave", "base":{"hp":12,"mp":0,"atk":5,"def":2,"mag":0,"agi":4}, "exp":6, "gold":4, "skills":[] },
+  { "id":"skeleton", "name":"スケルトン", "area":"cave", "base":{"hp":28,"mp":0,"atk":10,"def":6,"mag":0,"agi":6}, "exp":12, "gold":9, "skills":[] },
+  { "id":"mage", "name":"まほうつかい", "area":"cave", "base":{"hp":24,"mp":12,"atk":7,"def":4,"mag":9,"agi":7}, "exp":18, "gold":12, "skills":["fire"] },
+  { "id":"guardian", "name":"洞窟の番人", "area":"boss", "base":{"hp":180,"mp":40,"atk":18,"def":10,"mag":12,"agi":10}, "exp":0, "gold":0, "skills":["heal","fire"] }
+]
