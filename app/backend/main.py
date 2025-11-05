@@ -39,5 +39,3 @@ def load_game():
     """Placeholder endpoint for future server-side loading."""
 
     return {"status": "not_implemented"}
-
-*** End of File
