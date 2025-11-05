@@ -22,5 +22,3 @@ def roll_encounter(payload: EncounterRollRequest, request: Request):
 
     data = request.app.state.data
     return data.encounter_roll(payload.areaId, payload.counter)
-
-*** End of File
