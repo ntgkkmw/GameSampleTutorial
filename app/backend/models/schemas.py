@@ -134,5 +134,3 @@ class LoadResponse(BaseModel):
     """Placeholder for server-side load."""
 
     payload: Dict
-
-*** End of File
